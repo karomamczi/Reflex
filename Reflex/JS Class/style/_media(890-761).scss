@@ -1,0 +1,236 @@
+@media (min-width: 761px) and (max-width: 890px) {
+    body {
+        --widthBox: 50px;
+        --heightBox: 50px;
+        img{
+            position: fixed;
+            top: -50px;
+        }
+        .hp {
+            position: fixed;
+            display: block;
+            width: 110px;
+            height: 40px;
+            border: 3px whitesmoke solid;
+            top: 3%;
+            left: 6%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 22px;
+            color: whitesmoke;
+        }
+        .points {
+            position: fixed;
+            display: block;
+            width: 110px;
+            height: 40px;
+            border: 3px whitesmoke solid;
+            color: whitesmoke;
+            top: 3%;
+            left: 23%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 22px;
+            
+        }
+        .name {
+            position: fixed;
+            top: 3%;
+            left: calc(50% - 60px);
+            font-size: 30px;
+            color: whitesmoke;
+        }
+        .timer {
+            position: fixed;
+            display: block;
+            width: 140px;
+            height: 40px;
+            border: 3px whitesmoke solid;
+            top: 3%;
+            right: 6%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 22px;
+            color: whitesmoke;
+        }
+        .head {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 90vw;
+            height: 80vh;
+            border: 3px whitesmoke solid;
+            .buttons{
+                button {
+                    height: var(--heightBox);
+                    width: var(--widthBox);
+                    border-radius: 6px;
+                    border: 3px greenyellow solid;
+                    background-color: transparent;
+                }
+                .greenButton{
+                    background-color: greenyellow;
+                    
+                }
+                #one_one {
+                    position: absolute;
+                    top: 10%;
+                    left: calc(30% - var(--widthBox)/2);
+                }
+                #one_two {
+                    position: absolute;
+                    top: 10%;
+                    left: calc(40% - var(--widthBox)/2);
+                }
+                
+                #one_three {
+                    position: absolute;
+                    top: 10%;
+                    left: calc(50% - var(--widthBox)/2);
+                }
+                
+                #one_four {
+                    position: absolute;
+                    top: 10%;
+                    left: calc(60% - var(--widthBox)/2);;
+                }
+                #one_fife {
+                    position: absolute;
+                    top: 10%;
+                    left: calc(70% - var(--widthBox)/2);;
+                }
+                #two_one {
+                    position: absolute;
+                    top: 25%;
+                    left: calc(30% - var(--widthBox)/2);;
+                }
+                #two_two {
+                    position: absolute;
+                    top: 25%;
+                    left: calc(40% - var(--widthBox)/2);;
+                }
+                
+                #two_three {
+                    position: absolute;
+                    top: 25%;
+                    left: calc(50% - var(--widthBox)/2);;
+                }
+                
+                #two_four {
+                    position: absolute;
+                    top: 25%;
+                    left: calc(60% - var(--widthBox)/2);;
+                }
+                #two_fife {
+                    position: absolute;
+                    top: 25%;
+                    left: calc(70% - var(--widthBox)/2);;
+                }
+                #three_one {
+                    position: absolute;
+                    top: 40%;
+                    left: calc(30% - var(--widthBox)/2);;
+                }
+                #three_two {
+                    position: absolute;
+                    top: 40%;
+                    left: calc(40% - var(--widthBox)/2);;
+                }
+                
+                #three_three {
+                    position: absolute;
+                    top: 40%;
+                    left: calc(50% - var(--widthBox)/2);;
+                }
+                
+                #three_four {
+                    position: absolute;
+                    top: 40%;
+                    left: calc(60% - var(--widthBox)/2);;
+                }
+                #three_fife {
+                    position: absolute;
+                    top: 40%;
+                    left: calc(70% - var(--widthBox)/2);;
+                }
+                #four_one {
+                    position: absolute;
+                    top: 55%;
+                    left: calc(30% - var(--widthBox)/2);;
+                }
+                #four_two {
+                    position: absolute;
+                    top: 55%;
+                    left: calc(40% - var(--widthBox)/2);;
+                }
+                
+                #four_three {
+                    position: absolute;
+                    top: 55%;
+                    left: calc(50% - var(--widthBox)/2);;
+                }
+                
+                #four_four {
+                    position: absolute;
+                    top: 55%;
+                    left: calc(60% - var(--widthBox)/2);;
+                }
+                #four_fife {
+                    position: absolute;
+                    top: 55%;
+                    left: calc(70% - var(--widthBox)/2);;
+                }
+                #fife_one {
+                    position: absolute;
+                    top: 70%;
+                    left: calc(30% - var(--widthBox)/2);;
+                }
+                #fife_two {
+                    position: absolute;
+                    top: 70%;
+                    left: calc(40% - var(--widthBox)/2);;
+                }
+                
+                #fife_three {
+                    position: absolute;
+                    top: 70%;
+                    left: calc(50% - var(--widthBox)/2);;
+                }
+                
+                #fife_four {
+                    position: absolute;
+                    top: 70%;
+                    left: calc(60% - var(--widthBox)/2);;
+                }
+                #fife_fife {
+                    position: absolute;
+                    top: 70%;
+                    left: calc(70% - var(--widthBox)/2);;
+                }
+            }
+        }
+        .start {
+            position: absolute;
+            bottom: 3%;
+            left:23%;
+            width: 135px;
+            height: 40px;
+            border: 3px whitesmoke solid;
+            color: whitesmoke;
+            font-size: 20px;
+            background-color: rgba(245, 245, 245, 0.144);
+        }
+        
+        .reset {
+            position: absolute;
+            bottom: 3%;
+            right: 23%;
+            width: 135px;
+            height: 40px;
+            border: 3px whitesmoke solid;
+            color: whitesmoke;
+            background-color: rgba(245, 245, 245, 0.144);
+            font-size: 20px;
+        }
+    }
+}

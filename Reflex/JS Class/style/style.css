@@ -1,0 +1,1339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1861px) {
+  body {
+    --widthBox: 70px;
+    --heightBox: 70px;
+  }
+  body img {
+    position: fixed;
+    top: -50px;
+  }
+  body .hp {
+    position: fixed;
+    display: block;
+    width: 200px;
+    height: 70px;
+    border: 3px whitesmoke solid;
+    top: 1.5%;
+    left: 6%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    color: whitesmoke;
+  }
+  body .points {
+    position: fixed;
+    display: block;
+    width: 200px;
+    height: 70px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    top: 1.5%;
+    left: 17%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+  }
+  body .name {
+    position: fixed;
+    top: 2%;
+    left: calc(50% - 80px);
+    font-size: 40px;
+    color: whitesmoke;
+  }
+  body .timer {
+    position: fixed;
+    display: block;
+    width: 200px;
+    height: 70px;
+    border: 3px whitesmoke solid;
+    top: 1.5%;
+    right: 6%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    color: whitesmoke;
+  }
+  body .head {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90vw;
+    height: 80vh;
+    border: 3px whitesmoke solid;
+  }
+  body .head .buttons button {
+    height: var(--heightBox);
+    width: var(--widthBox);
+    border-radius: 6px;
+    border: 3px greenyellow solid;
+    background-color: transparent;
+  }
+  body .head .buttons .greenButton {
+    background-color: greenyellow;
+  }
+  body .head .buttons #one_one {
+    position: absolute;
+    top: 10%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_two {
+    position: absolute;
+    top: 10%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_three {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_four {
+    position: absolute;
+    top: 10%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_fife {
+    position: absolute;
+    top: 10%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_one {
+    position: absolute;
+    top: 25%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_two {
+    position: absolute;
+    top: 25%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_three {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_four {
+    position: absolute;
+    top: 25%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_fife {
+    position: absolute;
+    top: 25%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_one {
+    position: absolute;
+    top: 40%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_two {
+    position: absolute;
+    top: 40%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_three {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_four {
+    position: absolute;
+    top: 40%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_fife {
+    position: absolute;
+    top: 40%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_one {
+    position: absolute;
+    top: 55%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_two {
+    position: absolute;
+    top: 55%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_three {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_four {
+    position: absolute;
+    top: 55%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_fife {
+    position: absolute;
+    top: 55%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_one {
+    position: absolute;
+    top: 70%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_two {
+    position: absolute;
+    top: 70%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_three {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_four {
+    position: absolute;
+    top: 70%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_fife {
+    position: absolute;
+    top: 70%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .start {
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+    width: 200px;
+    height: 70px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    font-size: 30px;
+    background-color: rgba(245, 245, 245, 0.144);
+  }
+  body .reset {
+    position: absolute;
+    bottom: 3%;
+    right: 33%;
+    width: 200px;
+    height: 70px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.144);
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1261px) and (max-width: 1860px) {
+  body {
+    --widthBox: 70px;
+    --heightBox: 70px;
+  }
+  body img {
+    position: fixed;
+    top: -50px;
+  }
+  body .hp {
+    position: fixed;
+    display: block;
+    width: 180px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    top: 1.5%;
+    left: 6%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    color: whitesmoke;
+  }
+  body .points {
+    position: fixed;
+    display: block;
+    width: 180px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    top: 1.5%;
+    left: 20%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+  }
+  body .name {
+    position: fixed;
+    top: 2%;
+    left: calc(50% - 80px);
+    font-size: 40px;
+    color: whitesmoke;
+  }
+  body .timer {
+    position: fixed;
+    display: block;
+    width: 180px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    top: 1.5%;
+    right: 6%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    color: whitesmoke;
+  }
+  body .head {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90vw;
+    height: 80vh;
+    border: 3px whitesmoke solid;
+  }
+  body .head .buttons button {
+    height: var(--heightBox);
+    width: var(--widthBox);
+    border-radius: 6px;
+    border: 3px greenyellow solid;
+    background-color: transparent;
+  }
+  body .head .buttons .greenButton {
+    background-color: greenyellow;
+  }
+  body .head .buttons #one_one {
+    position: absolute;
+    top: 10%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_two {
+    position: absolute;
+    top: 10%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_three {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_four {
+    position: absolute;
+    top: 10%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_fife {
+    position: absolute;
+    top: 10%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_one {
+    position: absolute;
+    top: 25%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_two {
+    position: absolute;
+    top: 25%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_three {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_four {
+    position: absolute;
+    top: 25%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_fife {
+    position: absolute;
+    top: 25%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_one {
+    position: absolute;
+    top: 40%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_two {
+    position: absolute;
+    top: 40%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_three {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_four {
+    position: absolute;
+    top: 40%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_fife {
+    position: absolute;
+    top: 40%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_one {
+    position: absolute;
+    top: 55%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_two {
+    position: absolute;
+    top: 55%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_three {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_four {
+    position: absolute;
+    top: 55%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_fife {
+    position: absolute;
+    top: 55%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_one {
+    position: absolute;
+    top: 70%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_two {
+    position: absolute;
+    top: 70%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_three {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_four {
+    position: absolute;
+    top: 70%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_fife {
+    position: absolute;
+    top: 70%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .start {
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+    width: 180px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    font-size: 28px;
+    background-color: rgba(245, 245, 245, 0.144);
+  }
+  body .reset {
+    position: absolute;
+    bottom: 3%;
+    right: 33%;
+    width: 180px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.144);
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1260px) {
+  body {
+    --widthBox: 70px;
+    --heightBox: 70px;
+  }
+  body img {
+    position: fixed;
+    top: -50px;
+  }
+  body .hp {
+    position: fixed;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 3px whitesmoke solid;
+    top: 2.5%;
+    left: 6%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: whitesmoke;
+  }
+  body .points {
+    position: fixed;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    top: 2.5%;
+    left: 20%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+  }
+  body .name {
+    position: fixed;
+    top: 2%;
+    left: calc(50% - 80px);
+    font-size: 40px;
+    color: whitesmoke;
+  }
+  body .timer {
+    position: fixed;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 3px whitesmoke solid;
+    top: 2.5%;
+    right: 6%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: whitesmoke;
+  }
+  body .head {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90vw;
+    height: 80vh;
+    border: 3px whitesmoke solid;
+  }
+  body .head .buttons button {
+    height: var(--heightBox);
+    width: var(--widthBox);
+    border-radius: 6px;
+    border: 3px greenyellow solid;
+    background-color: transparent;
+  }
+  body .head .buttons .greenButton {
+    background-color: greenyellow;
+  }
+  body .head .buttons #one_one {
+    position: absolute;
+    top: 10%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_two {
+    position: absolute;
+    top: 10%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_three {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_four {
+    position: absolute;
+    top: 10%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_fife {
+    position: absolute;
+    top: 10%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_one {
+    position: absolute;
+    top: 25%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_two {
+    position: absolute;
+    top: 25%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_three {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_four {
+    position: absolute;
+    top: 25%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_fife {
+    position: absolute;
+    top: 25%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_one {
+    position: absolute;
+    top: 40%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_two {
+    position: absolute;
+    top: 40%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_three {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_four {
+    position: absolute;
+    top: 40%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_fife {
+    position: absolute;
+    top: 40%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_one {
+    position: absolute;
+    top: 55%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_two {
+    position: absolute;
+    top: 55%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_three {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_four {
+    position: absolute;
+    top: 55%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_fife {
+    position: absolute;
+    top: 55%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_one {
+    position: absolute;
+    top: 70%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_two {
+    position: absolute;
+    top: 70%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_three {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_four {
+    position: absolute;
+    top: 70%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_fife {
+    position: absolute;
+    top: 70%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .start {
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+    width: 160px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    font-size: 25px;
+    background-color: rgba(245, 245, 245, 0.144);
+  }
+  body .reset {
+    position: absolute;
+    bottom: 3%;
+    right: 33%;
+    width: 160px;
+    height: 60px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.144);
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 891px) and (max-width: 1119px) {
+  body {
+    --widthBox: 60px;
+    --heightBox: 60px;
+  }
+  body img {
+    position: fixed;
+    top: -50px;
+  }
+  body .hp {
+    position: fixed;
+    display: block;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    top: 2.5%;
+    left: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    color: whitesmoke;
+  }
+  body .points {
+    position: fixed;
+    display: block;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    top: 2.5%;
+    left: 23%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+  }
+  body .name {
+    position: fixed;
+    top: 2.5%;
+    left: calc(50% - 60px);
+    font-size: 30px;
+    color: whitesmoke;
+  }
+  body .timer {
+    position: fixed;
+    display: block;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    top: 2.5%;
+    right: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    color: whitesmoke;
+  }
+  body .head {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90vw;
+    height: 80vh;
+    border: 3px whitesmoke solid;
+  }
+  body .head .buttons button {
+    height: var(--heightBox);
+    width: var(--widthBox);
+    border-radius: 6px;
+    border: 3px greenyellow solid;
+    background-color: transparent;
+  }
+  body .head .buttons .greenButton {
+    background-color: greenyellow;
+  }
+  body .head .buttons #one_one {
+    position: absolute;
+    top: 10%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_two {
+    position: absolute;
+    top: 10%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_three {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_four {
+    position: absolute;
+    top: 10%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_fife {
+    position: absolute;
+    top: 10%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_one {
+    position: absolute;
+    top: 25%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_two {
+    position: absolute;
+    top: 25%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_three {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_four {
+    position: absolute;
+    top: 25%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_fife {
+    position: absolute;
+    top: 25%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_one {
+    position: absolute;
+    top: 40%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_two {
+    position: absolute;
+    top: 40%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_three {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_four {
+    position: absolute;
+    top: 40%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_fife {
+    position: absolute;
+    top: 40%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_one {
+    position: absolute;
+    top: 55%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_two {
+    position: absolute;
+    top: 55%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_three {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_four {
+    position: absolute;
+    top: 55%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_fife {
+    position: absolute;
+    top: 55%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_one {
+    position: absolute;
+    top: 70%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_two {
+    position: absolute;
+    top: 70%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_three {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_four {
+    position: absolute;
+    top: 70%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_fife {
+    position: absolute;
+    top: 70%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .start {
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: rgba(245, 245, 245, 0.144);
+  }
+  body .reset {
+    position: absolute;
+    bottom: 3%;
+    right: 33%;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.144);
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 890px) {
+  body {
+    --widthBox: 50px;
+    --heightBox: 50px;
+  }
+  body img {
+    position: fixed;
+    top: -50px;
+  }
+  body .hp {
+    position: fixed;
+    display: block;
+    width: 110px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    top: 3%;
+    left: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    color: whitesmoke;
+  }
+  body .points {
+    position: fixed;
+    display: block;
+    width: 110px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    top: 3%;
+    left: 23%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+  }
+  body .name {
+    position: fixed;
+    top: 3%;
+    left: calc(50% - 60px);
+    font-size: 30px;
+    color: whitesmoke;
+  }
+  body .timer {
+    position: fixed;
+    display: block;
+    width: 140px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    top: 3%;
+    right: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    color: whitesmoke;
+  }
+  body .head {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90vw;
+    height: 80vh;
+    border: 3px whitesmoke solid;
+  }
+  body .head .buttons button {
+    height: var(--heightBox);
+    width: var(--widthBox);
+    border-radius: 6px;
+    border: 3px greenyellow solid;
+    background-color: transparent;
+  }
+  body .head .buttons .greenButton {
+    background-color: greenyellow;
+  }
+  body .head .buttons #one_one {
+    position: absolute;
+    top: 10%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_two {
+    position: absolute;
+    top: 10%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_three {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_four {
+    position: absolute;
+    top: 10%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_fife {
+    position: absolute;
+    top: 10%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_one {
+    position: absolute;
+    top: 25%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_two {
+    position: absolute;
+    top: 25%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_three {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_four {
+    position: absolute;
+    top: 25%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_fife {
+    position: absolute;
+    top: 25%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_one {
+    position: absolute;
+    top: 40%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_two {
+    position: absolute;
+    top: 40%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_three {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_four {
+    position: absolute;
+    top: 40%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_fife {
+    position: absolute;
+    top: 40%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_one {
+    position: absolute;
+    top: 55%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_two {
+    position: absolute;
+    top: 55%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_three {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_four {
+    position: absolute;
+    top: 55%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_fife {
+    position: absolute;
+    top: 55%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_one {
+    position: absolute;
+    top: 70%;
+    left: calc(30% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_two {
+    position: absolute;
+    top: 70%;
+    left: calc(40% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_three {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_four {
+    position: absolute;
+    top: 70%;
+    left: calc(60% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_fife {
+    position: absolute;
+    top: 70%;
+    left: calc(70% - var(--widthBox)/2);
+  }
+  body .start {
+    position: absolute;
+    bottom: 3%;
+    left: 23%;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: rgba(245, 245, 245, 0.144);
+  }
+  body .reset {
+    position: absolute;
+    bottom: 3%;
+    right: 23%;
+    width: 135px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.144);
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 760px) {
+  body {
+    --widthBox: 38px;
+    --heightBox: 38px;
+  }
+  body img {
+    position: fixed;
+    top: -50px;
+  }
+  body .hp {
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    top: 4%;
+    left: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  body .points {
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    top: 4%;
+    left: 24%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  body .name {
+    position: fixed;
+    top: 4%;
+    left: 46%;
+    font-size: 30px;
+    color: whitesmoke;
+  }
+  body .timer {
+    position: fixed;
+    display: block;
+    width: 130px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    top: 4%;
+    right: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  body .head {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90vw;
+    height: 80vh;
+    border: 3px whitesmoke solid;
+  }
+  body .head .buttons button {
+    height: var(--heightBox);
+    width: var(--widthBox);
+    border-radius: 6px;
+    border: 3px greenyellow solid;
+    background-color: transparent;
+  }
+  body .head .buttons .greenButton {
+    background-color: greenyellow;
+  }
+  body .head .buttons #one_one {
+    position: absolute;
+    top: 10%;
+    left: calc(20% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_two {
+    position: absolute;
+    top: 10%;
+    left: calc(35% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_three {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_four {
+    position: absolute;
+    top: 10%;
+    left: calc(65% - var(--widthBox)/2);
+  }
+  body .head .buttons #one_fife {
+    position: absolute;
+    top: 10%;
+    left: calc(80% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_one {
+    position: absolute;
+    top: 25%;
+    left: calc(20% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_two {
+    position: absolute;
+    top: 25%;
+    left: calc(35% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_three {
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_four {
+    position: absolute;
+    top: 25%;
+    left: calc(65% - var(--widthBox)/2);
+  }
+  body .head .buttons #two_fife {
+    position: absolute;
+    top: 25%;
+    left: calc(80% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_one {
+    position: absolute;
+    top: 40%;
+    left: calc(20% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_two {
+    position: absolute;
+    top: 40%;
+    left: calc(35% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_three {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_four {
+    position: absolute;
+    top: 40%;
+    left: calc(65% - var(--widthBox)/2);
+  }
+  body .head .buttons #three_fife {
+    position: absolute;
+    top: 40%;
+    left: calc(80% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_one {
+    position: absolute;
+    top: 55%;
+    left: calc(20% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_two {
+    position: absolute;
+    top: 55%;
+    left: calc(35% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_three {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_four {
+    position: absolute;
+    top: 55%;
+    left: calc(65% - var(--widthBox)/2);
+  }
+  body .head .buttons #four_fife {
+    position: absolute;
+    top: 55%;
+    left: calc(80% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_one {
+    position: absolute;
+    top: 70%;
+    left: calc(20% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_two {
+    position: absolute;
+    top: 70%;
+    left: calc(35% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_three {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_four {
+    position: absolute;
+    top: 70%;
+    left: calc(65% - var(--widthBox)/2);
+  }
+  body .head .buttons #fife_fife {
+    position: absolute;
+    top: 70%;
+    left: calc(80% - var(--widthBox)/2);
+  }
+  body .start {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    width: 120px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: rgba(245, 245, 245, 0.144);
+  }
+  body .reset {
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
+    width: 120px;
+    height: 40px;
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.144);
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
