@@ -1,4 +1,6 @@
 class Game {
+    buttonClickRefs = {};
+
     constructor() {
         this.buttons = [...document.querySelectorAll('.buttons button')];
         this.start = document.querySelector('.start');
@@ -16,23 +18,23 @@ class Game {
         this.reset.addEventListener('click', this.resetGame);
     };
 
-    clickStart = (stop = false) => {
-        if (stop === false) {
-            this.buttons.some(button => button.addEventListener('click', () => {
-                if (button.className === "greenButton") {
-                    this.points = this.points + 1;
-                    this.scoring.textContent = `Punkty: ${this.points}`;
-                }
-                else {
-                    this.lives = this.lives - 1;
-                    this.hpCounter.textContent = `Życia: ${this.lives}`;
-                }
-            }));
+    handleClick(button) {
+        if (button.classList.contains("greenButton")) {
+          this.points = this.points + 1;
+          this.scoring.textContent = `Punkty: ${this.points}`;
+        } else {
+          this.lives = this.lives - 1;
+          this.hpCounter.textContent = `Życia: ${this.lives}`;
         }
-        else {
-            return
-        }
+    }
+
+    clickStart = () => {
+      this.buttons.forEach((button, index) => {
+        this.buttonClickRefs[index] = this.handleClick.bind(this, button)
+        button.addEventListener('click', this.buttonClickRefs[index])
+      });
     };
+
     rollStart = () => {
         const index = Math.floor(Math.random() * this.buttons.length);
         this.buttons[index].classList.add('greenButton');
@@ -86,10 +88,10 @@ class Game {
     resetGame = () => {
         this.resetStats();
         this.start.disabled = false;
-        this.clickStart(true)
         clearInterval(this.counter);
         clearInterval(this.rollInterval);
         clearInterval(this.endInterval);
+        this.buttons.forEach((button, index) => button.removeEventListener('click', this.buttonClickRefs[index]));
         //location.reload();
     };
         
